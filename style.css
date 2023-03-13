@@ -1,0 +1,155 @@
+:root
+{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid;
+    border-radius: 15px;
+    width: 80%;
+}
+.sedanbox,.suvbox,.luxurybox
+{
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 40px;
+}
+.sedanbox
+{
+    border-radius: 7px 7px 0px 0px;
+    background-color: var(--Bright-orange);
+}
+.suvbox
+{
+    background-color: var(--Dark-cyan);
+}
+.luxurybox
+{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 0px 7px 7px;
+}
+.sedancar,.suvcar,.luxurycar
+{
+    margin-bottom: 15px;
+}
+.sedanh,.suvh,.luxuryh
+{
+    font-family: "Big Shoulders Display",sans-serif;
+    color: white;
+    margin-bottom: 15px;
+}
+.sedanp,.suvp,.luxuryp
+{
+    color: var(--Transparent-white-paragraphs);
+    font-size: 15px;
+    font-family: "Lexend Deca";
+    margin-bottom: 15px;
+    line-height: 18px;
+}
+.sedanp
+{
+    width: 85%;
+}
+.suvp
+{
+    width: 85%;
+}
+.luxuryp
+{
+    width: 90%;
+}
+button
+{
+    border:0px solid;
+    border-radius: 50px;
+    width: 55%;
+    height: 10%;
+    font-size: 15px;
+}
+.sedanb
+{
+    color: var(--Bright-orange);
+}
+.suvb
+{
+    color: var(--Dark-cyan);
+}
+.luxuryb
+{
+    color: var(--Very-dark-cyan);
+}
+@media (width > 376px) 
+{
+    .container
+    {
+        display: flex;
+        flex-direction: row;
+        height: 75%;
+        width: 65%;
+    }
+    .luxurybox,.suvbox,.sedanbox
+    {
+        height: 100%;
+        width: 33%;
+    }
+    .sedanbox
+    {
+        border-radius: 7px 0px 0px 7px;
+    }
+    .luxurybox
+    {
+        border-radius: 0px 7px 7px 0px;
+    }
+    .sedanp,.suvp,.luxuryp
+    {
+        margin-bottom: 70px;
+        line-height: 26px;
+    }
+    .sedanp
+    {
+        width: 80%;
+    }
+    .suvp
+    {
+        width: 80%;
+    }
+    .luxuryp
+    {
+        width: 80%;
+    }
+    button
+    {
+        width: 60%;
+    }
+}
